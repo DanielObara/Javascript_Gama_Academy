@@ -92,10 +92,10 @@ window.addEventListener("keyup", (e) => {
 	}
 })
 
-// window.addEventListener("mousemove", (e)=>{
-// 	console.log("Horizontal:", e.x);
-// 	console.log("Vertical:", e.y);
-// })
+window.addEventListener("mousemove", (e)=>{
+	console.log("Horizontal:", e.x);
+	console.log("Vertical:", e.y);
+})
 
 window.addEventListener("scroll", () => {
 	if (window.scrollY > 1000) console.log("Scroll Vertical", window.scrollY)
