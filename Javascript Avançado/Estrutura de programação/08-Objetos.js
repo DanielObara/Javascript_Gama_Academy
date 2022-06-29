@@ -1,5 +1,6 @@
 const pessoa = {
 	nome: "Daniel",
+	idade: 29,
 	jogos: ["Dota", "LoL", "CS", "Chess", "Axie", "Cryptomines"],
 	peso: "1000kg",
 	cars: {

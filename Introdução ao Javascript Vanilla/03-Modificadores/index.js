@@ -1,7 +1,7 @@
 // Criando um elemento
 let umNovoParagrafo = document.createElement("p");
 // Criando um novo texto
-let textoNovo = document.createTextNode("Algum exemplo")
+let textoNovo = document.createTextNode("Algum exemplazsdfgasdfgasdfgsa")
 // Add um texto ao novo elemento
 umNovoParagrafo.appendChild(textoNovo)
 
@@ -9,17 +9,17 @@ umNovoParagrafo.appendChild(textoNovo)
 let paragrafoDeDentroDaDiv = document.querySelector("div div p")
 // Selecionando elemento pai por ID com querySelector
 let elementoPai = document.querySelector("#segundaDiv")
-// Inseriu um novo paragrafo antes do outro paragrago
+// Inseriu um novo paragrafo antes do outro paragrafo
 elementoPai.insertBefore(umNovoParagrafo, paragrafoDeDentroDaDiv)
 
-// Criar um novo item na lista
-let umNovoItemDeLista = document.createElement("li");
-// Criar o texto 
-let textoDaLi = document.createTextNode("Feijão");
-// Add o texto no Item da lista
-umNovoItemDeLista.appendChild(textoDaLi);
-// Add o item da lista e seu texto na lista ordenada (ol)
-document.getElementById("minha-lista").appendChild(umNovoItemDeLista);
+// // Criar um novo item na lista
+// let umNovoItemDeLista = document.createElement("li");
+// // Criar o texto 
+// let textoDaLi = document.createTextNode("Feijão");
+// // Add o texto no Item da lista
+// umNovoItemDeLista.appendChild(textoDaLi);
+// // Add o item da lista e seu texto na lista ordenada (ol)
+// document.getElementById("minha-lista").appendChild(umNovoItemDeLista);
 
 let novoItemLista = document.createElement("li");
 let outroTexto = document.createTextNode("Arroz");
@@ -58,12 +58,12 @@ console.log("🚀 LARGURA: ", primeiroh1.offsetWidth)
 console.log("🚀 ALTURA:", primeiroh1.offsetHeight)
 
 
-console.log("🚀 ~ file: index.js ~ line 53 ~ primeiroh1", primeiroh1.getBoundingClientRect())
+// console.log("🚀 ~ file: index.js ~ line 53 ~ primeiroh1", primeiroh1.getBoundingClientRect())
 
 setTimeout(() => {
 	primeiroh1.style.color = 'green';
 	primeiroh1.style.backgroundColor = 'black'
 }, 2000);
 
-let todosElementosListitem = document.querySelectorAll('li')
-todosElementosListitem[4].style.color = 'red'
+// let todosElementosListitem = document.querySelectorAll('li')
+// todosElementosListitem[4].style.color = 'red'

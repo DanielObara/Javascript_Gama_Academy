@@ -34,7 +34,8 @@ let btn2 = document.querySelector('#btn2');
  */
 btn2.addEventListener("click", () => {
 	clicouEmMim()
-	btn1.removeEventListener("click", Teste2)
+	btn1.removeEventListener("mousedown", mousedown)
+	btn1.removeEventListener("mouseup", mouseup)
 })
 
 let btn3 = document.querySelector('#btn3');
@@ -69,20 +70,25 @@ link.addEventListener('click', (e) => {
 })
 
 window.addEventListener("mousedown", () => {
-	console.log("clicou com o botão do mouse")
+	// console.log("clicou com o botão do mouse")
 })
 
 window.addEventListener("mouseup", () => {
-	console.log("soltou o botão do mouse")
+	// console.log("soltou o botão do mouse")
 })
 
-window.addEventListener("keydown", (e) => {
-	if (e.key == 'Enter') {
+function captureTheKey(evento) {
+	console.log("🚀 ~ file: index.js ~ line 80 ~ captureTheKey ~ evento", evento)
+	if (evento.key == 'Enter') {
 		console.log('Pressionou o Enter');
-	} else if (e.key == 'q') {
+		return 'teste'
+	} else if (evento.key == 'q') {
 		console.log('Pressionou o q');
 	}
-})
+	return 'teste'
+}
+
+window.addEventListener("keydown", captureTheKey)
 
 window.addEventListener("keyup", (e) => {
 	if (e.key == 'Enter') {
@@ -92,7 +98,7 @@ window.addEventListener("keyup", (e) => {
 	}
 })
 
-window.addEventListener("mousemove", (e)=>{
+window.addEventListener("mousemove", (e) => {
 	console.log("Horizontal:", e.x);
 	console.log("Vertical:", e.y);
 })
@@ -118,6 +124,7 @@ window.addEventListener("load", () => {
 	alert("A página foi carregada com sucesso.")
 })
 
-window.addEventListener("beforeunload", (e) => {
-	e.returnValue = null;
-})
+window.addEventListener("beforeunload", function (event) {
+	// event.returnValue = "voce tem certeza disso?";
+});
+

@@ -1,0 +1,13 @@
+{
+  "name": "asynchonous-example",
+  "version": "1.0.0",
+  "description": "Just an example of how to use async functions",
+  "main": "14.FetchExample.js",
+  "repository": "https://github.com/DanielObara/Javascript_Gama_Academy",
+  "author": "Daniel Obara",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.2.6"
+  },
+  "type": "module"
+}
